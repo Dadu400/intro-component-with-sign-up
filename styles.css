@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+:root {
+    --pink: #FF7979;
+    --button: #38CC8B;
+    --btn: #5E54A4;
+    --p: #3D3B48;
+    --white: #ffffff;
+    --lastp: #BAB7D4;
+}
+
+body {
+    background-image: url(./assets/background.svg);
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 88px 24px;
+    gap: 65px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 0.292px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+}
+
+.textside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.head {
+    width: 327px;
+    height: 88px;
+    border-radius: 10px;
+    background-color: var(--btn);
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white);
+    text-align: center;
+    padding: 18px 67px;
+    margin-bottom: 24px;
+}
+
+.head span {
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15); 
+    border-radius: 10px;
+    width: 327px;
+    padding: 24px;
+    gap: 16px;
+}
+
+input {
+    width: 279px;
+    height: 56px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE; 
+    padding: 15px ;
+}
+
+#submit {
+    border-radius: 5px;
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    background-color: var(--button);
+    color: var(--white);
+    border-style: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.error {
+    width: 100%;
+    font-size: 11px;
+    color: var(--pink);
+    font-weight: 500;
+    text-align: right;
+    font-style: italic;
+    height: 17px;
+    display: flex;
+    justify-content: end;
+    margin-top: 2px;
+}
+
+.error-icon {
+    background-image: url(./assets/error.svg);
+    background-position: 97%;
+    background-repeat: no-repeat;
+    background-clip: 5%;
+}
+
+.lastp {
+    color: var(--lastp);
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 21px; 
+    width: 249px;
+}
+
+.lastp span a {
+    color: var(--pink);
+    font-weight: 700;
+    text-decoration: none;
+}

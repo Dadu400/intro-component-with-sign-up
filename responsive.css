@@ -1,0 +1,67 @@
+@media screen and (min-width: 840px) {
+    
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 70px;
+    }
+
+    section {
+        max-width: 100%;
+        width: 50%;
+    }
+
+    main {
+        padding: 0 160px;
+        flex-direction: row;
+        gap: 45px;
+    }
+
+    .head {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 50px;
+        letter-spacing: 0.5px;
+        width: 525px;
+        height: 131px;
+        text-align: start;
+    }
+
+    p {
+        font-size: 16px;
+        width: 525px;
+        height: 78px; 
+        text-align: start;
+    }
+
+    .textside {
+        gap: 40px;
+    }
+
+    .head {
+        width: 540px;
+        height: 60px;
+        padding: 17px 100px;
+    }
+
+    form { 
+        width: 540px;
+        padding: 40px;
+    }
+
+    input {
+        width: 460px;
+        padding: 15px 32px;
+    }
+    
+    button {
+        width: 460px;
+    }
+
+    .lastp {
+        width: 367px;
+    }
+}
