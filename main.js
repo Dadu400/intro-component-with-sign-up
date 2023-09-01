@@ -54,7 +54,6 @@ function validateForm(e) {
         return;
     } 
 
-
     if(email.value === '') {
         emailerr.innerHTML = 'Email cannot be empty'
         email.classList.add('error-icon')
@@ -71,25 +70,12 @@ function validateForm(e) {
         password.classList.add('error-icon')
         return;
     } else if (!passwordRegex.test(password.value)) {
-        passerr.innerHTML = 'Invalid input'
+        passerr.innerHTML = 'Password should contain numbers'
         return;
     } 
 
     console.log("First Name:", fname.value)
     console.log("Last Name:", lname.value)
     console.log("Email:", email.value)
-
-    fname.addEventListener('input', clearError)
-    lname.addEventListener('input', clearError)
-    email.addEventListener('input', clearError)
-    password.addEventListener('input', clearError)
-
-    function clearError() {
-        if (this.classList.contains('error-icon')) {
-            this.classList.remove('error-icon');
-            const errorId = this.Id + "Error";
-            document.querySelector(`#${errorId}`).innerHTML = ''
-        } 
-    }
 }
 
